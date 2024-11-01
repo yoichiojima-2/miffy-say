@@ -1,8 +1,8 @@
 from argparse import ArgumentParser, Namespace
 
 
-def main(msg: str) -> None:
-    print(f" () () \n(・x・)  <  {msg}")
+def main(msg: str) -> str:
+    return f" () () \n(・x・)  <  {msg}"
 
 
 def parse_args() -> Namespace:
@@ -13,4 +13,4 @@ def parse_args() -> Namespace:
 
 if __name__ == "__main__":
     args = parse_args()
-    main(args.message)
+    print(main(args.message))
