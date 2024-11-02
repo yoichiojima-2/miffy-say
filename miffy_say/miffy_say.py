@@ -6,8 +6,10 @@ def main(msg: str) -> str:
 
 
 def parse_args() -> Namespace:
-    parser = ArgumentParser() 
-    parser.add_argument("--message", "-m", type=str, default = "say what you want me to say")
+    parser = ArgumentParser()
+    parser.add_argument(
+        "--message", "-m", type=str, default="say what you want me to say"
+    )
     return parser.parse_args()
 
 
